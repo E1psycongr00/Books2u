@@ -43,7 +43,7 @@ public class MemberController {
 	
 	@GetMapping("/loginUI")
 	public String loginUI() throws Exception {
-		return "member/loginForm";
+		return "loginForm";
 	}
 	
 	// 로그인
