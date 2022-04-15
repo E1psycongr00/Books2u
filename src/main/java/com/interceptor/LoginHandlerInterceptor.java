@@ -19,7 +19,7 @@ public class LoginHandlerInterceptor extends HandlerInterceptorAdapter {
 		HttpSession session = request.getSession();
 		MemberDTO dto = (MemberDTO)session.getAttribute("login");
 		if(dto == null) {
-			response.sendRedirect("main");
+			response.sendRedirect("loginUI");
 			return false;
 		}
 		return true;

@@ -18,6 +18,7 @@
 		
 		// 장바구니 넣기 버튼 이벤트 처리
 		$("#goCartBtn").on("click", function() {
+			
 			// 폼 데이터 직렬화
 			var title = $("#hiddenTitle");
 			var amount = $("#amount")

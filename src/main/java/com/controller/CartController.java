@@ -28,10 +28,7 @@ public class CartController {
 	
 	@GetMapping("/cartList")
 	public String cartList(HttpSession session, Model m) throws Exception {
-		// 로그인 체크
 		MemberDTO memberDTO = (MemberDTO)session.getAttribute("login");
-		if(memberDTO == null)
-			return "redirect:loginUI";
 		List<CartDTO> cartList = service.showCartList(memberDTO.getUserId());
 		m.addAttribute("cartList", cartList);
 		return "cartList";

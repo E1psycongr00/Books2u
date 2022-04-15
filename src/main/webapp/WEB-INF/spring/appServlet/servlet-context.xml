@@ -29,6 +29,14 @@
 	    <ref bean="loginHandlerInterceptor"/>
 	  </mvc:interceptor>
 	  <mvc:interceptor>
+	    <mvc:mapping path="/directOrder/**"/>
+	    <ref bean="loginHandlerInterceptor"/>
+	  </mvc:interceptor>
+   	  <mvc:interceptor>
+	    <mvc:mapping path="/cartList/**"/>
+	    <ref bean="loginHandlerInterceptor"/>
+	  </mvc:interceptor>
+	  <mvc:interceptor>
 	    <mvc:mapping path="/myPage/**"/>
 	    <ref bean="loginHandlerInterceptor"/>
 	  </mvc:interceptor>
